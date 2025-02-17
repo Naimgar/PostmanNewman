@@ -1,0 +1,17 @@
+name: Newman Run
+
+on:
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  newman:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: matt-ball/newman-action@master
+        with:
+          apiKey: PMAK-67b36bf198e75c0001f4e9bb-376f68e0c406ff06f37c994ef7b928d474
+          collection: TestAPI.json
+          environment: 5922408-228c7edd-fc15-4f68-9665-a35d7df6945b
