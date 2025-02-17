@@ -41,7 +41,7 @@ jobs:
 
       - name: Publish Github Pages
         if: ${{ always() }}
-        uses: peaceiris/actions-gh-pages@v4.2.0
+        uses: peaceiris/actions-gh-pages@v4.0.0
         with:
           github_token: PMAK-67b36bf198e75c0001f4e9bb-376f68e0c406ff06f37c994ef7b928d474
           publish_branch: gh-pages
